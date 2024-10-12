@@ -1,0 +1,78 @@
+{
+  "menu": [
+    {
+      "title": "ABOUT US",
+      "link": "#",
+      "subMenu": [
+        {
+          "title": "Our company",
+          "link": "#"
+        },
+        {
+          "title": "Milestone",
+          "link": "#"
+        },
+        {
+          "title": "Our team",
+          "link": "#"
+        },
+        {
+          "title": "Location",
+          "link": "#"
+        },
+        {
+          "title": "Certification",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "PRODUCTS",
+      "link": "#",
+      "subMenu": [
+        {
+          "title": "PIR Detector",
+          "link": "#"
+        },
+        {
+          "title": "HF Detector",
+          "link": "#"
+        },
+        {
+          "title": "DALI Sensor",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "NEWS",
+      "link": "#",
+      "subMenu": [
+        {
+          "title": "All",
+          "link": "#"
+        },
+        {
+          "title": "News",
+          "link": "#"
+        },
+        {
+          "title": "Events",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "DOWNLOAD",
+      "link": "#"
+    },
+    {
+      "title": "CATALOGUE",
+      "link": "#"
+    },
+    {
+      "title": "CONTACT US",
+      "link": "#"
+    }
+  ]
+}
