@@ -1,0 +1,102 @@
+@use "sass:math";
+@use "sass:color";
+// 變數
+@use "../mixin/variable" as vars;
+// Mixin
+@use "../mixin/mixin";
+
+/*  Reset */
+* {
+  min-width: 0;
+  box-sizing: border-box;
+  position: relative;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    margin: 0;
+  }
+}
+ol {
+  list-style: decimal;
+  padding: 0 0 0 1em;
+  margin: 0;
+  li {
+    margin: 0;
+  }
+}
+img, picture, svg, video, canvas{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; 
+  font-style: italic;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+img {
+  object-position: center;
+  object-fit: cover;
+}
+input, button, textarea, select{
+  font: inherit;
+}
+::-webkit-input-placeholder {
+  color: #aaa;
+  font-size: calc(var(--fs-def) * 0.88);
+  opacity: 1
+}
+::-moz-placeholder {
+  color: #aaa;
+  font-size: calc(var(--fs-def) * 0.88);
+  opacity: 1
+}
+:-ms-input-placeholder,
+:-moz-placeholder {
+  color: #aaa;
+  font-size: calc(var(--fs-def) * 0.88);
+  opacity: 1
+}
+
+html {
+  font-size: 16px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-def);
+  font-size: var(--fs-def);
+  color: #333;
+  line-height: 1.8;
+  font-weight: 400;
+  word-wrap: break-word;
+  overflow-x: hidden;
+  // background-color: #000;
+  // scrollbar-width: auto;
+  // scrollbar-color: #333 #000;
+  // &::-webkit-scrollbar {
+  //   width: 6px;
+  // }
+  // &::-webkit-scrollbar-track {
+  //   background: #000;
+  // }
+  // &::-webkit-scrollbar-thumb {
+  //   background-color: #333;
+  //   border-radius: 0;
+  //   border: 1px solid #fff;
+  // }
+  // &::-webkit-scrollbar:focus {
+  //   background: #555;
+  // }
+}
