@@ -2,27 +2,27 @@
   "menu": [
     {
       "title": "ABOUT US",
-      "link": "#",
+      "link": "/about",
       "subMenu": [
         {
           "title": "Our company",
-          "link": "#"
+          "link": "/about/company"
         },
         {
           "title": "Milestone",
-          "link": "#"
+          "link": "/about/milestone"
         },
         {
           "title": "Our team",
-          "link": "#"
+          "link": "/about/team"
         },
         {
           "title": "Location",
-          "link": "#"
+          "link": "/about/location"
         },
         {
           "title": "Certification",
-          "link": "#"
+          "link": "/about/certification"
         }
       ]
     },

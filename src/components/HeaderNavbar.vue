@@ -71,10 +71,10 @@ onMounted(() => {
 <template>
   <header class="header">
     <div class="w-container" :class="{'is-open-nav': isOpen}">
-      <a href="#" class="nav-brand">
-        <img src="../assets/images/logo.svg" />
+      <router-link to="/" class="nav-brand">
+        <img src="@/assets/images/logo.svg" />
         <span>Your Company</span>
-      </a>
+      </router-link>
 
       <!-- Navigation -->
       <nav class="navbar">
@@ -84,14 +84,15 @@ onMounted(() => {
             :key="index"
             :class="{'has-child': item.subMenu && item.subMenu.length > 0}"
           >
-            <a
+            <router-link
+              :to="item.link"
               :href="item.link"
               :title="item.title"
               @click.prevent=
               "item.subMenu && item.subMenu.length > 0 ? toggleSubMenu(item.title) : null"
             >
               {{ item.title }}
-            </a>
+            </router-link>
             <ul v-if=
               "item.subMenu && item.subMenu.length > 0 && (showSubMenu === item.title || !isMobile)"
             >
@@ -99,7 +100,13 @@ onMounted(() => {
                 v-for="(subItem, subIndex) in item.subMenu"
                 :key="subIndex"
               >
-                <a :href="subItem.link" :title="subItem.title">{{ subItem.title }}</a>
+                <router-link
+                  :to="subItem.link"
+                  :href="subItem.link"
+                  :title="subItem.title"
+                >
+                  {{ subItem.title }}
+                  </router-link>
               </li>
             </ul>
           </li>
