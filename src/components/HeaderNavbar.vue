@@ -17,7 +17,7 @@ const toggleNav = () => {
 
 const baseUrl = import.meta.env.VITE_API_BASE_URL;
 const menuItems = ref([]);
-const showSubMenu = ref(null);
+const showSubMenu = ref(null); // 暫存當前選單
 
 const toggleSubMenu = (menuTitle) => {
   // 在移動裝置模式下才使用 click 來控制次選單

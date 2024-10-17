@@ -2,7 +2,7 @@
   "menu": [
     {
       "title": "ABOUT US",
-      "link": "/about",
+      "link": "#",
       "subMenu": [
         {
           "title": "Our company",
